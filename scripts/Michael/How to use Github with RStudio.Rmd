@@ -1,0 +1,8 @@
+---
+title: "How to use Github with R"
+author: "Michael Andreae"
+date: "Thursday, October 16, 2014"
+output: html_document
+---
+
+For more details on using Github in RStudio R Markdown see <http://www.molecularecologist.com/2013/11/using-github-with-r-and-rstudio/>.
