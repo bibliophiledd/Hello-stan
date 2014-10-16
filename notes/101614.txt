@@ -1,0 +1,11 @@
+things to improve:
+1. how to make the plots wider?
+2. how to make the scatterplot and contour plot faster? (thinning option?)
+
+repo structure (3 repos):
+1. communication repo (meeting notes, random functions, comments)
+2. developer repo (containing a most up-to-date version of package)
+3. public repo (containing a bug-free package that can be used by everyone)
+
+next meeting: Tuesday 9:15 am 10th floor SSW
+
