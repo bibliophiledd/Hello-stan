@@ -1,3 +1,5 @@
+# Michael commenting
+
 plot.param.vertical <- function(samps, params, with.density = FALSE,
                                 CI.level = 0.5, show.level = 0.95){
   dim.samps <- dim(samps) #nIter, nChain, nParam
