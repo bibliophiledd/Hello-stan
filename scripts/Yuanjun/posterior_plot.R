@@ -17,6 +17,8 @@ plot.param.vertical <- function(samps, params, with.density = FALSE,
                  0.5 + show.level / 2)
   samps.quantile <- t(apply(samps.use, 2, quantile, probs = probs.use))
   
+  ## Just trying to enter some comments to see if Github works seemsless
+  
   y <- seq(nParams, 1, by = -1)
   xlim <- c(min(samps.quantile[,1]), max(samps.quantile[,5])) 
   xrange <- diff(xlim)
