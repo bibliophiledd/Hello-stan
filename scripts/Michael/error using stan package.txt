@@ -1,0 +1,13 @@
+The downloaded binary packages are in
+	C:\Users\Michael Andreae\AppData\Local\Temp\RtmpeAAA0l\downloaded_packages
+"C:/PROGRA~1/R/R-31~1.1/bin/x64/R" --vanilla CMD INSTALL "C:\Users\Michael  \
+  Andreae\AppData\Local\Temp\RtmpeAAA0l\devtools2f084948586a\jgabry-SHINYstan-615bff0"  \
+  --library="C:/Users/Michael Andreae/Documents/R/win-library/3.1" --install-tests 
+
+ERROR: dependency 'rstan' is not available for package 'SHINYstan'
+* removing 'C:/Users/Michael Andreae/Documents/R/win-library/3.1/SHINYstan'
+Error: Command failed (1)
+In addition: Warning message:
+package ‘rstan’ is not available (for R version 3.1.1) 
+> library(SHINYstan)
+Error in library(SHINYstan) : there is no package called ‘SHINYstan’
