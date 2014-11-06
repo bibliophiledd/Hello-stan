@@ -1,0 +1,154 @@
+---
+title: "Package ‘SHINYstan'"
+output: 
+  pdf_document:
+    toc: true
+    toc_depth: 5
+    fig.width: 7
+    fig.height: 5
+---
+
+**Type** Package
+
+**Title** Dynamic Documents for R
+
+**Version** 0.0.2
+
+**Date** 2014-11-05
+
+**Author** Jonah Gabry, Michael Andreae, Yuanjun Gao, Dongying Song
+
+**Maintainer** Jonah Gabry <jsg2201@columbia.edu>
+
+**Description** R-package based on Shiny helps facilitate bayesian data analysis visualization (especially for RStan users).
+
+**Depends** R (>= 3.0)
+
+**Imports** tools, utils, knitr (>= 1.6), yaml (>= 2.1.5), htmltools (>= 0.2.4), caTools Suggests shiny (>= 0.10.1), testthat, digest
+
+**SystemRequirements** pandoc (>= 1.12.3) -http://johnmacfarlane.net/pandoc URL http://rmarkdown.rstudio.com
+
+**License** GPL-3
+
+**NeedsCompilation** no
+
+**Repository** CRAN
+
+**Date/Publication** 2014-11-05 18:12:29
+
+
+
+#1.How to get started
+##1.1 Install SHINYstan
+```{r,eval=FALSE}
+#Install "devtools" R package
+library("devtools") 
+#Use the install_github function in "devtools" package to install SHINYstan
+install_github("jgabry/SHINYstan")
+#Load/attach the SHINYstan package
+library("SHINYstan")
+#Use the launch_SHINYstan_demo() function to launch the demo or use launch_SHINYstan(stanfit), replacing stanfit with a stanfit of your choice
+launch_SHINYstan_demo()
+```
+
+##1.2 Quick Look at the interface
+
+"Individual Parameters", "Model", "Sampler Paramters", "Warnings", "Notes", "Credits": use the tabs to switch
+
+![Image](tabs1.png)
+
+![Image](tabs2.png)
+
+##2.Individual Parameters
+###2.1Select parameters through widgets
+<div class="columns-2">
+![Image](widgets.png)
+
+![Image](widgets1.png)
+</div>
+###Check Rhat n_eff mean sd 2.5% 50% 97.5% CI from the table
+
+
+![Image](table1.png)
+
+###Check Trace, Density, Bivariate Plots by clicking those tabs
+<div class="columns-2">
+![Image](tab1.png)
+![Image](tab2.png)
+</div>
+
+###Below Trace Plot, there you can adjust number of chains, whether include warmup or not, even customize appearance
+
+![Image](trace1.png)
+
+![Image](trace2.png)
+
+![Image](trace3.png)
+
+![Image](trace4.png)
+
+![Image](trace5.png)
+
+###Bivariate plot: select your y axis and style of plot
+
+![Image](bi.png)
+
+###At bottom of plot, you have the option to save ggplot2 object(.RData)
+
+![Image](save.png)
+
+##Model
+
+###Parameter Plot and Posterior summary statistics
+
+![Image](model.png)
+
+###Parameter Plot
+
+###Select or enter parameter names(can select all:ALL theta)
+
+![Image](alltheta.png)
+
+
+###Adjust Credible interval
+
+![Image](Credible1.png)
+
+![Image](Credible2.png)
+
+
+###Posterior summary statistics
+
+###Adjust how many parameters displaied per page
+
+![Image](perpage.png)
+
+###Search any parameter
+
+![Image](search.png)
+
+###Sort by ascending or descending order
+
+![Image](sort.png)
+
+###Search any record by type in
+
+![Image](type.png)
+
+##Sampler Parameters
+
+###Include warmup period or not
+
+![Image](warmup.png)
+
+##Warnings
+
+###Take a quick look at warnings
+
+![Image](warning.png)
+
+##Notes
+
+###Leave notes and save changes
+
+![Image](note.png)
